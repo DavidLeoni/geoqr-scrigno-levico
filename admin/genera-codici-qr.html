@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name='viewport' 
+                content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+        <link rel="stylesheet" href="css/server-style.css">
+    
+        <script type="text/javascript" src="lib/easy.qrcode.min.js"> </script>
+        <script type="text/javascript" src="lib/jszip.min.js"> </script>
+        <script type="text/javascript" src="lib/FileSaver.min.js"> </script>      
+        <script type="text/javascript" src="js/genera-codici-qr.js" defer> </script>      
+
+        <title>Generatore codici QR</title>  
+    </head>
+    <body>
+    
+        <h1 class="pannello-amministrazione">La strada romana - pannello amministrazione</h1>        
+        <h1>Generatore codici QR</h1>    
+
+        <p>
+            E' possibile usare <span class="codice">{i}</span>  come segnaposto per i numeri.
+        </p>
+
+        <fieldset>
+            <label>Url</label> <input name="text" value="https://coderdojotrento.github.io/tutorial-geoqr-html/{i}-domanda.html" >
+            <label>Titolo</label>  <input name="title" value="Tutorial GeoQR / {i}" >
+            <label>Sottotitolo</label>  <input name="subTitle" value="coderdojotrento.github.io/tutorial-geoqr-html/{i}-domanda.html" >
+            <label>larghezza</label><input name="width" value="400">
+            <label> Logo </label> <input name="logo" value="logo.png">
+            <label>Nome file da generare</label> <input name="nomefile" value="{i}-codice-qr.png">
+            <label>Quanti </label>  <input name="quanti" value="2">
+            
+        </fieldset>
+
+        <div id="bottoni">
+            <button id="genera" type="submit" name="submit">Genera codici QR</button>
+            <button id="scarica" class="btn btn-primary">Scarica ZIP</button>
+        </div>
+
+        <div id="qrcodes"></div>
+                                	
+</script>        
+    </body>
+</html>

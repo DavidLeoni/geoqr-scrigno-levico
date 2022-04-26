@@ -1,0 +1,36 @@
+.pannello-amministrazione {
+    margin:10px;
+    font-size:20px;
+    background-color: #fbe3b4;
+}
+
+
+.codice {
+    background-color:beige
+}
+
+
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+    margin-right:10px;
+}
+input {
+  display: inline-block;
+  float: left;
+  min-width: 700px;
+}
+
+#bottoni {
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:300px;
+}
+
+#qrcodes {
+    margin-left:280px;
+}
